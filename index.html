@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>b.df 시계 뚝딱</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+	
+	<style type="text/css">
+	html {font-family: 'Nanum Gothic Coding', monospace;;color: #364942;}
+	body {margin: 0; padding: 0;margin: auto;}
+	
+	.wrap {width: 1000px; text-align: center;margin: auto;}
+	header {margin:0px;width: 1000px; background-color: #364942;height: 230px;border-radius: 10px;}
+	h1 {padding-top: 100px;color: white; margin-left: 875px;}
+	
+	.box1 {width: 1000px; height: 650px;}
+	.box1 .inner {width: 500px;height:600px;float: left; margin-top: 25px;}
+	.box1 .inner .inimg {width: 500px; height: 600px; float: right;margin: 0px;border-radius: 10px;}
+	.a {background-image: url('a.png');background-size:cover;}
+	
+	.name {width: 500px; height: 460px;float: left; margin: auto;}
+	.name h2 {text-align: left; margin-left: 20px; padding-bottom: 5px;}
+	.name h3 {font-size: 14px; text-align: left; margin-left: 20px;padding-bottom: 5px;line-height: 20px;}
+	hr { background-color: #364942;margin-left: 20px;float: left;width: 95.8%;margin-top: 25px; padding-bottom: 3px; margin-bottom: 20px;border-radius: 10px;}
+	.hr2 {background-color: #364942;margin-left: 20px;float: left;width: 95.8%;margin-top: 0px; padding-bottom: 1px; margin-bottom: 25px;border-radius: 10px;}
+	
+	.name p {width: 95.8%; height: 40px; margin:auto; margin-top: 100px; background-color: #f1b897; padding-top: 20px;margin-left: 20px;color: white;border-radius: 10px;font-weight: bold;}
+	.button {width: 95.8%; height: 10px; margin:auto; margin-top: 10px; margin-left: 20px;border-radius: 10px;}
+	.button p {width: 47%; height: 40px; float: left; background-color: #f1b897;margin:0; padding-top: 20px; color: white; margin-right: 10px;font-weight: bold;}
+
+	.p {text-align: left; font-size: 14px; padding-top: 30px; line-height: 21px;}
+	.hr3 {background-color: #364942;width: 100%;margin-top: 0px;margin-left: 0px; padding-bottom: 0px; margin-bottom: 25px;border-radius: 10px;}
+	.imgcoupon {width: 100%; margin-top: 50px;border-radius: 10px;}
+
+	#sec3 {padding-top:200px; text-align: center;}
+	#sec3 p {font-size: 10px;margin-bottom: 20px;}
+	#sec3 div {width: 600px; height: 200px; background-color: #f1b897;border-radius: 10px;
+		padding: 30px;color: white; line-height: 30px; margin:40px; margin-left: 170px; }
+	.no {width: 50px; height: 10px; background-color: #f1b897;border-radius: 10px;
+		padding: 20px;color: white; margin:40px; margin-left: 450px; font-size: 15px;}
+
+	#sec4 {padding-top:200px;margin-left: 80px;}
+	.box2 {width: 840px; height: 600px;background-color:#364942;border-radius: 10px;}
+	.box2 .inner {width: 500px;height:500px;float: right; margin:0px;margin-top: 30px;}
+	.box2 .inner .inimg {width: 460px; height: 540px; float: right;margin: 0px; margin-right: 60px;border-radius: 10px;}
+	.box2 .text {color: white; padding-top: 10px;}
+	.box2 .text h2 {margin-left: 0px; line-height: 37px;}
+	.box2 .text p {margin-left: 0px; line-height: 28px;}
+
+	#sec5 {padding-top:200px; text-align: left; margin-left: 80px;}
+	#sec5 h2{width: 330px; background-color: #f1b897; padding: 40px; border-radius: 10px; color: white;line-height: 35px;}
+	#sec5 h3 {margin-top: 100px; margin-bottom: 10px; text-decoration: underline;}
+	#sec5 p {margin-top: 10px; margin-bottom: 10px; line-height: 25px;}
+	img{width: 840px; margin-top: 30px;border-radius: 10px;}
+
+	#sec6 {padding-top:200px; text-align: left; margin-left: 80px;}
+	#sec6 h3 {margin-top: 50px; margin-bottom: 10px; text-decoration: underline;}
+
+	#sec7 {padding-top:50px; text-align: left; margin-left: 80px;}
+	.box3 {width: 840px; height: 380px;}
+	.box3 .inner {width: 400px;height: 280px; float: left; margin: 0; padding: 10px}
+	.box3 .inner .inimg {height: 300px; border-radius: 10px;}
+	.box3 .inner p {text-align: center; line-height: 25px;}
+	
+	.k1{background-image: url('k1.png');background-size:cover;}
+	.k2{background-image: url('k2.png');background-size:cover;}
+	.k3{background-image: url('k3.png');background-size:cover;}
+	.k4{background-image: url('k4.png');background-size:cover;}
+	.k5{background-image: url('k5.png');background-size:cover;}
+	.k6{background-image: url('k6.png');background-size:cover;}
+
+	#sec8 {padding-top:200px; text-align: left; margin-left: 80px; margin-bottom: 300px;}
+	.imgi {width: 420px;}
+
+	#sec9 {padding-top:100px; text-align: left; margin-left: 80px; margin-bottom: 300px;}
+
+
+	footer {width: 1000px; text-align: center;margin: auto; height: 100px; padding-top: 30px;
+		color:#f1b897 }
+	
+	nav{width: 1000px;height: 44px; background:#f1b897;font-weight: bold;}
+	nav ul{margin: 0px;float: right;}
+	nav li{width: 120px;height: 44px; background: #f1b897; float: left; list-style-type: none;}
+	nav ul li a{display:block;color: white;text-decoration: none;text-align: center;line-height: 44px; transition: all 0.5s;}
+	nav ul li a:hover{color: white; background:#364942;
+			font-size: 20px;}
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="wrap">
+
+
+	<header>
+			<nav>
+		<ul>
+		<li><a href="#sec5">상품</a></li>
+		<li><a href="#sec6">제작방법</a></li>
+		</ul>	
+	</nav>
+		<h1>d.bf</h1>
+	</header>
+
+		
+		<section>
+		<div class="box1">
+			<div class="inner">
+				<div class="inimg a"></div>
+			</div>
+			<div class="name">
+				<hr>
+				<h2>[스페셜 상품] 시계 뚝딱!</h2>	
+				<h3>★★★★★</h3>
+				<h2>3300원</h2>
+				<hr class="hr2">
+				<h3>상품할인
+					<br>d.bf 카드 3000원 (청구할인)
+					<br>적립금 3p
+				</h3>
+				<p>상품을 선택해주세요.</p>
+				<div class="button">
+					<p>장바구니</p>
+					<p>관심상품</p>
+				</div>
+			</div>
+		</div>
+		</section>
+
+		
+		<section>
+			<p class="p"> 상품정보
+				<br>상품코드 : 286034
+				<br>배송정보 : 해당 브랜드 제품 20000원 이상시  무료배송이 됩니다.<br>유의사항 : 본 상품은 쿠폰 적용이 불가한 상품입니다.
+			</p>
+			<hr class="hr3">
+			
+			<img src="b.png" class="imgcoupon">
+			<p class="p">유의사항
+				<br>본 상품의 이미지는 연출된 이미지로 실제와 다를 수가 있습니다.
+				<br>조화 꽃은 포함되지 않은 패키지입니다.
+				<br>종이 가방 특성상 구김이 있을 수 있습니다.
+				<br>상품 설명
+				<br>흔히 있는 종이가방을 시계 만들 수 있는 패키지입니다.
+				<br>누구나 업사이클링을 쉽게 경험할 수 있습니다.
+				<br>특별한 자기만의 시계를 만들 수 있습니다.
+				<br>누구나 쉽고 빠르게 만드실 수 있습니다.
+			</p>
+		</section>
+
+
+		<section id="sec3">
+			
+				<h3>업사이클링을 아시나요?</h3>
+			
+			<div>
+				<h2> 업사이클링(Up-Cycling)</h2>
+				<h2>재활용품에 디자인 또는 활용도를 더해
+					<br> 그 가치를 높인 제품으로 재탄생시키는 것</h2>
+				<p>[네이버 지식백과] 업사이클링 (시사상식사전, pmg 지식엔진연구소)</p>
+			</div>
+				
+				<h3>업사이클링은 금손만 가능하다구요?</h3>
+			<h2 class="no">아니요</h2>
+				<h3>누구나 쉽게 할 수 있습니다!!</h3>
+		
+		</section>
+
+
+		<section id="sec4">
+			
+			<div class="box2">
+				<div class="inner">
+				<div class="inimg a"></div></div>
+			<div class="text">
+			<h2>누구나 쉽게 하는 <br> 업사이클링 패키지</h2>
+			<p> → 종이가방으로 <br> 시계만들기</p>
+			</div>
+			<div style="clear:both"></div>
+			</div>
+			
+		</section>
+
+		
+		<section id="sec5">
+			
+			<h2>집에 있는 종이가방으로 <br> 특별한 시계를 만들어 봐요.</h2>
+				<p>집에 쌓여있는 종이가방으로 시계를 만들 수 있는 세트 입니다.
+					<br> 아크릴 물감이 포함된 세트와 아닌 것으로 이루어져 있습니다.</p>
+				<p>- 송곳의 색과 시계 바늘의 디자인은 랜덤입니다.</p>
+			
+			<h3>종이가방 채색 세트</h3>
+				<p> 집에 있는 종이가방을 직접 디자인해서 만들 수 있도록 <br> 12색 아크릴 물감 상자와 붓이 포함 되어있습니다.
+					<br> 종이가방의 줄을 교체할 수 있도록 리본 끈이 포함 되어있습니다.</p>
+				<img src="c.png">
+				<p>건전지 AA, 무브먼트, 시계 바늘, 페인트 붓, 송곳, 리본끈, 아크릴 물감</p>
+
+			<h3>종이가방 세트</h3>
+				<p>집에 맘에 드는 종이가방이 있는 분을 위한 세트 입니다.
+					<br>  종이가방의 줄을 교체할 수 있도록 리본 끈이 포함 되어있습니다.</p>
+				<img src="d.png">
+				<P>건전지 AA, 무브먼트, 시계 바늘, 송곳, 리본끈</P>
+			
+			<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+			<h2>패턴 종이가방으로 <br> 특별한 시계를 만들어 봐요.</h2>
+				<p>집에 있는 종이가방으로 만들기 싫은 분을 위해 <br> 패턴 종이가방으로 시계를 만들어 볼 수 있는 세트입니다. <br> 종이가방의 패턴과 크기는 두가지로 이루어져있습니다.</p>
+			<p>- 송곳의 색과 시계 바늘의 디자인은 랜덤입니다.</p>
+			
+			<h3>종이 가방 a 세트</h3>
+				<p> 새로 줄무늬로 디자인 된 종이 가방입니다. 
+					<br> 크기는 가로 21cm, 세로 16cm 입니다. </p>
+				<img src="e.png">
+				<P>종이가방a, 건전지 AA, 무브먼트, 시계 바늘, 송곳 </P>
+
+			<h3>종이 가방 b 세트</h3>
+				<p> 물방울 패턴으로로 디자인 된 종이 가방입니다. 
+					<br> 크기는 가로 18cm, 세로 23cm 입니다.</p>
+				<img src="f.png">
+				<P>종이가방b, 건전지 AA, 무브먼트, 시계 바늘, 송곳</P>
+		
+		</section>
+
+
+		<section id="sec6">
+
+			<h3>제작 방법</h3>
+			<p>본 제작방법에는 '종이 가방 a 세트'가 사용되었습니다.</p>
+		
+		</section>
+
+
+		<section id="sec7">
+			
+			<div class="box3">
+				<div class="inner">
+					<div class="inimg k1"></div>
+					<p>구성품을 준비해주세요.</p>
+				</div>
+					
+				<div class="inner">
+					<div class="inimg k2"></div>
+					<p>종이 가방 중앙보다 위를 송곳으로 뚫어주세요.</p>
+				</div>
+			</div>
+
+			<div class="box3">
+				<div class="inner">
+					<div class="inimg k3"></div>
+					<p>무브먼트 건전지를 넣어주세요.</p>
+				</div>
+
+				<div class="inner">
+					<div class="inimg k4"></div>	
+					<p>종이 가방의 속에 무브먼트를 넣어주세요.</p>
+				</div>
+			</div>
+
+				
+			<div class="box3">
+				<div class="inner">
+					<div class="inimg k5"></div>	
+					<p>뚫은 구멍에 무브먼트를 넣어주세요.</p>
+				</div>
+
+				<div class="inner">
+					<div class="inimg k6"></div>
+					<p>시계 바늘을 무브먼트에 꽃아주세요. 
+					<br> 순서는 시침 분침 초침 순이에요. </p>
+				</div>
+			</div>
+		
+		</section>
+
+		<section id="sec8">
+
+		<img src="h.png">
+		<img src="i.png" class="imgi">			
+		
+		</section>
+
+		
+		<section id="sec9" class="p">
+		
+		<hr class="hr3">
+			<p> 배송정보</p>
+		<ul>
+			<li><p>Delivery 브랜드 업체발송은 상품설명에 별도로 기입된 브랜드 알림 배송공지 기준으로 출고되고 <br> 브랜드마다 개별 배송비가 부여됩니다.</p></li>
+			<li><p>Delivery b.df 자체발송은 오후 3시까지 결제확인된 주문은 당일 출고되고 <br> 5만원 이상 주문은 무료배송, 5만원 미만은 3,000원의 배송비가 추가됩니다.</p></li>
+			<li><p>SPECIAL ORDER, PT 등 예약주문은 상세설명의 출고일정을 확인하시기 바랍니다.</p></li>
+			<li><p>구두, 액세서리, 침구, 액자, 가구 등 상품설명의 제작기간을 숙지해주시기 바랍니다.</p></li>
+			<li><p>가구 및 일부 상품, 제주도를 포함한 도서산간 지역은 추가배송비 입금요청이 있을 수 있습니다.</p></li>
+		</ul>
+		
+		<hr class="hr3">
+			<p>교환, 환불, A/S 안내</p>
+		<ul>
+			<li><p>상품 수령일로부터 7일 이내 반품 / 환불 가능합니다.</p></li>
+			<li><p>변심 반품의 경우 왕복배송비를 차감한 금액이 환불되며, 제품 및 포장 상태가 재판매 가능하여야 합니다.</p></li>
+			<li><p>상품 불량인 경우는 배송비를 포함한 전액이 환불됩니다.</p></li>
+			<li><p>출고 이후 환불요청 시 상품 회수 후 처리됩니다.</p></li>
+			<li><p>주얼리 등 주문제작상품 / 카메라 / 밀봉포장상품 등은 변심에 따른 반품 / 환불이 불가합니다.</p></li>
+			<li><p>일부 완제품으로 수입된 상품의 경우 A/S가 불가합니다.</p></li>
+			<li><p>특정브랜드의 상품설명에 별도로 기입된 교환 / 환불 / AS 기준이 우선합니다.</p></li>
+			<li><p>구매자가 미성년자인 경우에는 상품 구입 시 법정대리인이 동의하지 아니하면 <br>미성년자 본인 또는 법정대리인이 구매취소 할 수 있습니다.</p></li>
+		</ul>
+		</section>
+
+
+	<footer>
+		<p> 2018.04.23 Lee A Hyun all rights reserve. 모든 저작권은 이아현에게 있습니다.</p>
+	</footer>	
+	
+
+</div>
+
+
+</body>
+</html>
